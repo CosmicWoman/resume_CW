@@ -1,0 +1,26 @@
+@import './fonts.scss'; //Шрифты
+@import './nullstyle.scss'; // Нормализация
+
+body {
+    font-family: 'Comfortaa',sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+#root{
+    height: 100%;
+}
+
+.app{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    .content{
+        flex: 1 1 auto;
+        }
+}

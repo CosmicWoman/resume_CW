@@ -1,0 +1,8 @@
+.basic-info{
+    flex-grow: 0.2;
+    &__content{
+        background-color: lavender;
+        min-width: 250px;
+        height: calc(100vh - 32px);
+    }
+}

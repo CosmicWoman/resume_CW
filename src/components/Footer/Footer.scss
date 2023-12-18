@@ -1,0 +1,15 @@
+.footer{
+    font-weight: 100;
+    font-size: 8px;
+    &__container{
+        padding: 5px 42px;
+        background-color: rgba(230, 230, 250, 0.2);
+    }
+    &__content{
+
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+}
