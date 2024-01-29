@@ -1,0 +1,24 @@
+.languageChanger {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    &__block {
+        width: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22px;
+        color: #b0afb1;
+    }
+    &__btn {
+        background-color: transparent;
+        color: #b0afb1;
+        &_active {
+            color: #fff;
+        }
+    }
+}

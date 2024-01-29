@@ -2,21 +2,15 @@ import React, {FC} from 'react';
 import HeaderBlock from "./HeaderBlock/HeaderBlock";
 import InfoBlock from "./InfoBlock/InfoBlock";
 import './DetailedInfo.scss'
+import {UserType} from "../../../types/userType";
 
-interface nameProps {
-    "name": {
-        ru: string
-        en: string
-    }
-}
-
-const DetailedInfo: FC<nameProps> = (name) => {
+const DetailedInfo: FC<UserType> = (User) => {
     return (
         <div className="detailedInfo">
             <div className="container detailedInfo__container">
                 <div className="detailedInfo__content">
-                    <HeaderBlock ru={name.name.ru}
-                                 en={name.name.en}/>
+                    <HeaderBlock ru={User.personal_info.name.ru}
+                                 en={User.personal_info.name.en}/>
                     <InfoBlock/>
                 </div>
             </div>

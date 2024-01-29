@@ -5,7 +5,7 @@ let user
 
 function UserCreate() {
     axios
-        .get('http://localhost:3000/user')
+        .get('http://localhost:300/user')
         .then((response) => {
             user = response.data
         })
@@ -13,6 +13,3 @@ function UserCreate() {
 
 UserCreate()
 export const Info = user
-
-
-console.log(Info)
