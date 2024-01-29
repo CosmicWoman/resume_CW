@@ -4,6 +4,7 @@ import BasicInfo from "./BasicInfo/BasicInfo";
 import DetailedInfo from "./DetailedInfo/DetailedInfo";
 import {defaultUser, UserType} from "../../types/userType";
 import axios from "axios";
+import api from "../../api";
 
 interface nameProps {
     ru: string
@@ -24,12 +25,9 @@ const Content = () => {
     }, [])
 
     async function UserCreate() {
-        await axios
-            .get('http://localhost:3001/user')
-            .then((response) => {
-                setUser(response.data)
-                setName(response.data.personal_info.name)
-            })
+        const response = await api.get.data()
+        setUser(response.user)
+        setName(response.user.personal_info.name)
     }
 
     return (

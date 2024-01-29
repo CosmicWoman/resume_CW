@@ -1,14 +1,15 @@
 import getEndpoints from '../server/server';
+import {UserType} from "../types/userType";
 
 const endpoints = getEndpoints();
 
 type ENDPOINTS = keyof typeof endpoints;
 type RESPONSE_DATA = {
-    greeting: string;
+    user: UserType;
 };
 
 const getJson = async <T>(endpoint: ENDPOINTS): Promise<T> => {
-    const path = `https://raw.githubusercontent.com/CosmicWoman/resume-cw/gh-pages/static/db/${endpoint}.json`;
+    const path = `https://raw.githubusercontent.com/CosmicWoman/resume_CW/gh-pages/static/server/${endpoint}.json`;
     const response = await fetch(path);
 
     return await response.json();
