@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/resume_CW/static/css/main.121b7bae.css",
-    "main.js": "/resume_CW/static/js/main.a27884e3.js",
+    "main.js": "/resume_CW/static/js/main.561241cb.js",
     "static/media/Comfortaa-SemiBold.eot": "/resume_CW/static/media/Comfortaa-SemiBold.d5565f39995b174448d5.eot",
     "static/media/Comfortaa-Medium.eot": "/resume_CW/static/media/Comfortaa-Medium.03cfa91b4c0dda3e5859.eot",
     "static/media/Comfortaa-Regular.eot": "/resume_CW/static/media/Comfortaa-Regular.074598226a9d5c8303a5.eot",
@@ -27,10 +27,10 @@
     "index.html": "/resume_CW/index.html",
     "static/media/getFetch.cjs": "/resume_CW/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.121b7bae.css.map": "/resume_CW/static/css/main.121b7bae.css.map",
-    "main.a27884e3.js.map": "/resume_CW/static/js/main.a27884e3.js.map"
+    "main.561241cb.js.map": "/resume_CW/static/js/main.561241cb.js.map"
   },
   "entrypoints": [
     "static/css/main.121b7bae.css",
-    "static/js/main.a27884e3.js"
+    "static/js/main.561241cb.js"
   ]
 }
