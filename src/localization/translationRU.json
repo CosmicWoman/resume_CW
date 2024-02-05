@@ -1,3 +1,20 @@
 {
+    "header": {
 
+    },
+    "footer": {
+
+    },
+    "content": {
+        "otherInfo": {
+            "skills": "Навыки",
+            "hobbies": "Увлечения",
+            "other_skills": "Другие навыки"
+        },
+        "infoBlock": {
+            "project": "Примеры работ",
+            "education": "Образование",
+            "work": "Опыт работы"
+        }
+    }
 }

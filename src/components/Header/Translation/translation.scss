@@ -1,24 +1,45 @@
 .languageChanger {
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-end;
+    margin: 5px 15px;
+    width: 50px;
     &__block {
-        width: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__text {
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 22px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
         color: #b0afb1;
     }
     &__btn {
-        background-color: transparent;
-        color: #b0afb1;
+        padding: 2px 5px;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #E6E6FA;
+        color: #fff;
         &_active {
-            color: #fff;
+            background-color: #E6D4FA;
         }
+    }
+
+    &__btn-dark {
+        padding: 2px 5px;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #B8B5E3;
+        color: #fff;
+        &_active {
+            background-color: #9790F9;
+        }
+    }
+
+    &__btn-1{
+        border-radius: 16px 0 0 16px;
+        border-right: 1px solid #fff;
+    }
+    &__btn-2{
+        border-radius: 0 16px 16px 0;
+        border-left: 1px solid #fff;
     }
 }

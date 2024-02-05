@@ -1,8 +1,12 @@
 .headerBlock{
-    &_content{
+    &__content{
         background-color: #E0FFFF;
     }
-    &_item{
+    &__content-dark{
+        color: white ;
+        background-color: rgba(66, 49, 137, 0.7);;
+    }
+    &__item{
         font-weight: 600;
         font-size: 35px;
         line-height: 40px;

@@ -1,19 +1,4 @@
-export interface PersonalInfoType {
-    "personal_info": {
-        "name": {
-            "ru": string,
-            "en": string
-        },
-        "birthday": string,
-        "phone_number": number,
-        "email": string,
-        "city": {
-            "ru": string,
-            "en": string
-        },
-        "salary": number
-    }
-}
+import {ProjectsType} from "./projectsType";
 
 export interface UserType {
     "photo": string,
@@ -37,27 +22,12 @@ export interface UserType {
         "ru": string[],
         "en": string[]
     },
+    "projects": ProjectsType[]
     "education_background": EducationBack[],
-    "work_experience": [
-        {
-            "position": {
-                "ru": string,
-                "en": string
-            },
-            "company": {
-                "ru": string,
-                "en": string
-            },
-            "work_period": string,
-            "responsibilities": {
-                "ru": string[],
-                "en": string[]
-            }
-        },
-    ]
+    "work_experience": WorkExp[]
 }
 
-interface EducationBack {
+export interface EducationBack {
     "speciality": {
         "ru": string,
         "en": string
@@ -68,55 +38,102 @@ interface EducationBack {
     }
 }
 
+export interface WorkExp {
+    "position": {
+        "ru": string,
+        "en": string
+    },
+    "company": {
+        "ru": string,
+        "en": string
+    },
+    "work_period": string,
+    "responsibilities": {
+        "ru": string[],
+        "en": string[]
+    }
+}
+
+export interface PersonalInfoType {
+    "personal_info": {
+        "name": {
+            "ru": string,
+            "en": string
+        },
+        "birthday": string,
+        "phone_number": number,
+        "email": string,
+        "city": {
+            "ru": string,
+            "en": string
+        },
+        "salary": number
+    }
+}
+
 export const defaultUser: UserType = {
-        "photo": "",
-        "personal_info": {
-            "name": {
+    "photo": "",
+    "personal_info": {
+        "name": {
+            "ru": "",
+            "en": ""
+        },
+        "birthday": "",
+        "phone_number": 0,
+        "email": "",
+        "city": {
+            "ru": "",
+            "en": ""
+        },
+        "salary": 0
+    },
+    "hard_skills": [""],
+    "other_skills": [""],
+    "hobbies": {
+        "ru": [""],
+        "en": [""]
+    },
+    "projects": [
+        {
+            "name_project": {
                 "ru": "",
                 "en": ""
             },
-            "birthday": "",
-            "phone_number": 0,
-            "email": "",
-            "city": {
+            "link_project": "",
+            "project_tools": [""],
+            "specification": {
                 "ru": "",
                 "en": ""
-            },
-            "salary": 0
-        },
-        "hard_skills": [""],
-        "other_skills": [""],
-        "hobbies": {
-            "ru": [""],
-            "en": [""]
-        },
-        "education_background": [
-            {
-                "speciality": {
-                    "ru": "",
-                    "en": ""
-                },
-                "educational_institution": {
-                    "ru": "",
-                    "en": ""
-                }
             }
-        ],
-        "work_experience": [
-            {
-                "position": {
-                    "ru": "",
-                    "en": ""
-                },
-                "company": {
-                    "ru": "",
-                    "en": ""
-                },
-                "work_period": "",
-                "responsibilities": {
-                    "ru": [""],
-                    "en": [""]
-                }
+        }
+    ],
+    "education_background": [
+        {
+            "speciality": {
+                "ru": "",
+                "en": ""
             },
-        ]
+            "educational_institution": {
+                "ru": "",
+                "en": ""
+            }
+        }
+    ],
+    "work_experience": [
+        {
+            "position": {
+                "ru": "",
+                "en": ""
+            },
+            "company": {
+                "ru": "",
+                "en": ""
+            },
+            "work_period": "",
+            "responsibilities": {
+                "ru": [""],
+                "en": [""]
+            }
+        },
+    ]
 }

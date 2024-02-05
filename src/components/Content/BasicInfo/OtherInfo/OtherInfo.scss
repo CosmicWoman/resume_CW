@@ -1,0 +1,16 @@
+.otherInfo{
+&__block{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 30px 20px;
+    &_title{
+font-family: Comfortaa;
+        padding-bottom: 10px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    &_content{
+        display: flex;
+    }
+}
+}

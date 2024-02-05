@@ -11,7 +11,9 @@ const DetailedInfo: FC<UserType> = (User) => {
                 <div className="detailedInfo__content">
                     <HeaderBlock ru={User.personal_info.name.ru}
                                  en={User.personal_info.name.en}/>
-                    <InfoBlock/>
+                    <InfoBlock educations={User.education_background}
+                               works={User.work_experience}
+                               projects={User.projects}/>
                 </div>
             </div>
         </div>

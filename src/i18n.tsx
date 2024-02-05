@@ -18,10 +18,10 @@ i18n
         },
     resources: {
         en: {
-            translation: translationRU
+            translation: translationEn
         },
         ru: {
-            translation: translationEn
+            translation: translationRU
         }
     }
 });

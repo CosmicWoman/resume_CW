@@ -3,7 +3,6 @@ import './Content.scss'
 import BasicInfo from "./BasicInfo/BasicInfo";
 import DetailedInfo from "./DetailedInfo/DetailedInfo";
 import {defaultUser, UserType} from "../../types/userType";
-import axios from "axios";
 import api from "../../api";
 
 interface nameProps {
@@ -34,11 +33,20 @@ const Content = () => {
         <div className="content">
             <div className="container content__container">
                 <div className="content__content">
-                    <BasicInfo photo={user.photo} personal_info={user.personal_info} hard_skills={user.hard_skills}
-                               other_skills={user.other_skills} hobbies={user.hobbies}
-                               education_background={user.education_background} work_experience={user.work_experience}/>
-                    <DetailedInfo photo={user.photo} personal_info={user.personal_info} hard_skills={user.hard_skills}
-                                  other_skills={user.other_skills} hobbies={user.hobbies}
+                    <BasicInfo photo={user.photo}
+                               personal_info={user.personal_info}
+                               hard_skills={user.hard_skills}
+                               other_skills={user.other_skills}
+                               hobbies={user.hobbies}
+                               projects={user.projects}
+                               education_background={user.education_background}
+                               work_experience={user.work_experience}/>
+                    <DetailedInfo photo={user.photo}
+                                  personal_info={user.personal_info}
+                                  hard_skills={user.hard_skills}
+                                  other_skills={user.other_skills}
+                                  hobbies={user.hobbies}
+                                  projects={user.projects}
                                   education_background={user.education_background}
                                   work_experience={user.work_experience}/>
                 </div>

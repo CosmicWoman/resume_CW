@@ -1,8 +1,29 @@
-.basic-info{
-    flex-grow: 0.2;
-    &__content{
-        background-color: lavender;
+.basic-info {
+    flex-grow: 0.1;
+
+    &__content {
+        background-color: #E6E6FA;
         min-width: 250px;
-        height: calc(100vh - 32px);
+        height: calc(100vh - 40px);
+        padding-top: 30px;
+    }
+
+    &__content-dark {
+        background-color: rgba(116, 66, 200, 0.3);
+        min-width: 250px;
+        height: calc(100vh - 40px);
+        padding-top: 30px;
+    }
+
+    &__photo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            object-fit: cover;
+            width: 200px;
+            height: 280px;
+            border-radius: 50%;
+        }
     }
 }

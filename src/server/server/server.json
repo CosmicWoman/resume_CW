@@ -6,7 +6,7 @@
                 "ru": "Наталья Магомедова",
                 "en": "Natalya Magomedova"
             },
-            "birthday": "11.07.1995",
+            "birthday": "07.11.1995",
             "phone_number": 79676739966,
             "email": "mikaat2r1370@gmail.com",
             "city": {
@@ -57,6 +57,20 @@
                 "other..."
             ]
         },
+        "projects": [
+            {
+                "name_project": {
+                    "ru": "",
+                    "en": ""
+                },
+                "link_project": "",
+                "project_tools": [""],
+                "specification": {
+                    "ru": "",
+                    "en": ""
+                }
+            }
+        ],
         "education_background": [
             {
                 "speciality": {
