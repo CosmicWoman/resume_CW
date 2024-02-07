@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume_CW/static/css/main.14c067e6.css",
-    "main.js": "/resume_CW/static/js/main.a70fc900.js",
+    "main.css": "/resume_CW/static/css/main.82ac497d.css",
+    "main.js": "/resume_CW/static/js/main.5abde467.js",
     "static/media/Comfortaa-SemiBold.eot": "/resume_CW/static/media/Comfortaa-SemiBold.d5565f39995b174448d5.eot",
     "static/media/Comfortaa-Medium.eot": "/resume_CW/static/media/Comfortaa-Medium.03cfa91b4c0dda3e5859.eot",
     "static/media/Comfortaa-Regular.eot": "/resume_CW/static/media/Comfortaa-Regular.074598226a9d5c8303a5.eot",
@@ -26,11 +26,11 @@
     "static/media/icons.svg": "/resume_CW/static/media/icons.73f6dd17be480e3410c3104acf95fcd0.svg",
     "index.html": "/resume_CW/index.html",
     "static/media/getFetch.cjs": "/resume_CW/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.14c067e6.css.map": "/resume_CW/static/css/main.14c067e6.css.map",
-    "main.a70fc900.js.map": "/resume_CW/static/js/main.a70fc900.js.map"
+    "main.82ac497d.css.map": "/resume_CW/static/css/main.82ac497d.css.map",
+    "main.5abde467.js.map": "/resume_CW/static/js/main.5abde467.js.map"
   },
   "entrypoints": [
-    "static/css/main.14c067e6.css",
-    "static/js/main.a70fc900.js"
+    "static/css/main.82ac497d.css",
+    "static/js/main.5abde467.js"
   ]
 }
