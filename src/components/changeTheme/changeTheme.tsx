@@ -5,9 +5,9 @@ const getTheme = () => {
     if ([ 'light', 'dark' ].includes(theme)) return theme
 
     const userMedia = window.matchMedia('(prefers-color-scheme: light)')
-    if (userMedia.matches) return 'dark'
+    if (userMedia.matches) return 'light'
 
-    return 'light'
+    return 'dark'
 }
 
 const initialState = getTheme()

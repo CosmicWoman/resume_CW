@@ -1,12 +1,12 @@
 .header{
-    &__content-light{
-        background-color: rgba(230, 230, 250, 0.2);
+    &__content-light, &__content-dark{
         display: flex;
         justify-content: space-between;
     }
+    &__content-light{
+        background-color: rgba(230, 230, 250, 0.2);
+    }
     &__content-dark{
         background-color: rgba(66, 49, 137, 0.5);
-        display: flex;
-        justify-content: space-between;
     }
 }

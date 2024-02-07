@@ -1,16 +1,15 @@
 .footer{
     &__container{
     }
-    &__content{
+    &__content, &__content-dark{
         font-weight: 100;
         font-size: 8px;
         padding: 5px 42px;
-        background-color: rgba(230, 230, 250, 0.2);
+    }
+    &__content{
+        background-color: rgba(230, 230, 250, 0.2)
     }
     &__content-dark{
-        font-weight: 100;
-        font-size: 8px;
-        padding: 5px 42px;
         background-color: rgba(66, 49, 137, 0.5);
         color: rgba(256, 256, 256, 0.5);
     }

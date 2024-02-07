@@ -1,16 +1,43 @@
-.otherInfo{
-&__block{
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 30px 20px;
-    &_title{
-font-family: Comfortaa;
-        padding-bottom: 10px;
-        font-weight: 700;
-        font-size: 16px;
-    }
-    &_content{
+.otherInfo {
+    &__block {
         display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        margin-top: 10px;
+
+        &:last-child, &:first-child {
+            margin-top: 30px;
+        }
+
+        &_title, &_titleSmall{
+            padding-bottom: 10px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        &_titleSmall{
+            font-size: 13px;
+        }
+
+        &_content {
+            display: flex;
+        }
+
+        &_list{
+            padding-left: 15px;
+            li{
+                display: flex;
+                padding-bottom: 3px;
+            }
+        }
     }
 }
+
+.list{
+    &__icon{
+        margin-top: -2.5px;
+        margin-right: 3px;
+    }
+    &__text{
+    }
 }

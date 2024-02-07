@@ -1,15 +1,17 @@
 .headerBlock{
     &__content{
-        background-color: #E0FFFF;
+        color: rgba(0, 0, 0, 0.7);
+        background-color: #E6D4FA;
     }
     &__content-dark{
         color: white ;
-        background-color: rgba(66, 49, 137, 0.7);;
+        background-color: rgba(66, 49, 137, 0.7);
     }
     &__item{
         font-weight: 600;
         font-size: 35px;
         line-height: 40px;
+        padding: 7px 15px;
     }
 
 }

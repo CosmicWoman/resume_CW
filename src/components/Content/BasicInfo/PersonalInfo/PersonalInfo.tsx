@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import {PersonalInfoType} from "../../../../types/userType";
 import {useTranslation} from "react-i18next";
 import Icons from "../../../../hooks/Icons/Icons";
+import './PersonalInfo.scss'
 
 const PersonalInfo: FC<PersonalInfoType> = (PersInfo) => {
     const {t, i18n} = useTranslation();
@@ -30,11 +31,15 @@ const PersonalInfo: FC<PersonalInfoType> = (PersInfo) => {
         <div className='personalInfo'>
             <div className="container personalInfo__container">
                 <div className="personalInfo__content">
+
+                    <div className="personalInfo__title">
+                        {t('content.PersonalInfo.title')}
+                    </div>
                     <div className="personalInfo__block">
-                        <div className="personalInfo__block-basic_icon">
+                        <div className="personalInfo__block_icon">
                             <Icons name='face' size='20'/>
                         </div>
-                        <div className="personalInfo__block-basic_text text">
+                        <div className="personalInfo__block_text text">
                             <div className="text__block-name">
                                 {i18n.language === 'ru' ? PersInfo.personal_info.name.ru : PersInfo.personal_info.name.en}
                             </div>
@@ -44,31 +49,30 @@ const PersonalInfo: FC<PersonalInfoType> = (PersInfo) => {
                         </div>
                     </div>
                     <div className="personalInfo__block">
-                        <div className="personalInfo__block-address_icon">
+                        <div className="personalInfo__block_icon">
                             <Icons name='address' size='20'/>
                         </div>
-                        <div className="personalInfo__block-address_text">
+                        <div className="personalInfo__block_text">
                             {(i18n.language == 'en') ? PersInfo.personal_info.city.en : PersInfo.personal_info.city.ru}
                         </div>
                     </div>
                     <div className="personalInfo__block">
-                        <div className="personalInfo__block-mail_icon">
+                        <div className="personalInfo__block_icon">
                             <Icons name='mail' size='20'/>
                         </div>
-                        <div className="personalInfo__block-mail_text">
+                        <div className="personalInfo__block_text">
                             {PersInfo.personal_info.email}
                         </div>
                     </div>
                     <div className="personalInfo__block">
 
-                        <div className="personalInfo__block-phone_icon">
+                        <div className="personalInfo__block_icon">
                             <Icons name='phone' size='20'/>
                         </div>
-                        <div className="personalInfo__block-phone_text">
+                        <div className="personalInfo__block_text">
                             {PersInfo.personal_info.phone_number}
                         </div>
                     </div>
-                    <div className="personalInfo__block-phone"></div>
                 </div>
             </div>
         </div>

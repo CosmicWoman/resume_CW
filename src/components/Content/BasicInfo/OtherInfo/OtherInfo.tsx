@@ -21,10 +21,17 @@ const OtherInfo: FC<skillsType> = (briefInfo) => {
                             <div className="otherInfo__block_icon">
                                 <Icons name='skills' size='20'/>
                             </div>
-                            <div className="otherInfo__block_list">
+                            <div className="otherInfo__block_list list">
                                 <ul>
                                     <CreateList items={briefInfo.hard_skills} renderItem={(skill: string) =>
-                                        <li>{skill}</li>
+                                        <li>
+                                            <div className="list__icon">
+                                                <Icons name='circle' size='5'/>
+                                            </div>
+                                            <div className="list__text">
+                                                {skill}
+                                            </div>
+                                        </li>
                                     }/>
                                 </ul>
                             </div>
@@ -32,14 +39,21 @@ const OtherInfo: FC<skillsType> = (briefInfo) => {
                     </div>
 
                     <div className="otherInfo__block">
-                        <div className="otherInfo__block_title">
+                        <div className="otherInfo__block_titleSmall">
                             {t('content.otherInfo.other_skills')}
                         </div>
                         <div className="otherInfo__block_content">
-                            <div className="otherInfo__block_list">
+                            <div className="otherInfo__block_list list">
                                 <ul>
                                     <CreateList items={briefInfo.other_skills} renderItem={(skill: string) =>
-                                        <li>{skill}</li>
+                                        <li>
+                                            <div className="list__icon">
+                                                <Icons name='circle' size='5'/>
+                                            </div>
+                                            <div className="list__text">
+                                                {skill}
+                                            </div>
+                                        </li>
                                     }/>
                                 </ul>
                             </div>
@@ -54,12 +68,19 @@ const OtherInfo: FC<skillsType> = (briefInfo) => {
                             <div className="otherInfo__block_icon">
                                 <Icons name='hobbies' size='24'/>
                             </div>
-                            <div className="otherInfo__block_list">
+                            <div className="otherInfo__block_list list">
                                 <ul>
                                     <CreateList
                                         items={(i18n.language == 'ru') ? briefInfo.hobbies.ru : briefInfo.hobbies.en}
                                         renderItem={(hobby: string) =>
-                                            <li>{hobby}</li>
+                                            <li>
+                                                <div className="list__icon">
+                                                    <Icons name='circle' size='5'/>
+                                                </div>
+                                                <div className="list__text">
+                                                    {hobby}
+                                                </div>
+                                            </li>
                                         }/>
                                 </ul>
                             </div>

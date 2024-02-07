@@ -15,6 +15,9 @@
             "project": "Work examples",
             "education": "Education",
             "work": "Work experience"
+        },
+        "PersonalInfo": {
+            "title": "Personal Information"
         }
     }
 }

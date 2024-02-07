@@ -6,6 +6,7 @@ import CreateList from "../../../CreateList/CreateList";
 import FormProject from "../../../FormList/FormProject";
 import FormEduc from "../../../FormList/FormEduc";
 import FormWork from "../../../FormList/FormWork";
+import './InfoBlock.scss'
 
 interface ViewForm {
     educations: EducationBack[],
@@ -35,6 +36,8 @@ const InfoBlock: FC<ViewForm> = ({educations,works,projects}) => {
                         </div>
                     </div>
 
+                    <div className="infoBlock__border"></div>
+
                     <div className="infoBlock__block">
                         <div className="infoBlock__block_title">
                             {t('content.infoBlock.education')}
@@ -47,16 +50,20 @@ const InfoBlock: FC<ViewForm> = ({educations,works,projects}) => {
                         </div>
                     </div>
 
+                    <div className="infoBlock__border"></div>
+
                     <div className="infoBlock__block">
                         <div className="infoBlock__block_title">
                             {t('content.infoBlock.work')}
                         </div>
                         <div className="infoBlock__block_list list">
                             <CreateList items={works} renderItem={(work:WorkExp) =>
-                                <FormWork position={work.position}
-                                          company={work.company}
-                                          work_period={work.work_period}
-                                          responsibilities={work.responsibilities}/>
+                                <div className="list__element">
+                                    <FormWork position={work.position}
+                                              company={work.company}
+                                              work_period={work.work_period}
+                                              responsibilities={work.responsibilities}/>
+                                </div>
                             }/>
                         </div>
                     </div>
