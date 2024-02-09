@@ -24,7 +24,7 @@ export interface UserType {
     },
     "projects": ProjectsType[]
     "education_background": EducationBack[],
-    "work_experience": WorkExp[]
+    "work_experience": WorksExp[]
 }
 
 export interface EducationBack {
@@ -38,7 +38,7 @@ export interface EducationBack {
     }
 }
 
-export interface WorkExp {
+export interface WorksExp {
     "position": {
         "ru": string,
         "en": string

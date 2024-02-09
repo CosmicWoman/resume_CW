@@ -1,40 +1,46 @@
 import React, {FC, useEffect} from 'react';
 import {useTranslation} from "react-i18next";
-import {WorkExp} from "../../types/userType";
+import {WorkExp} from "../../types/workExp";
 import CreateList from "../CreateList/CreateList";
 import './FormsStyles.scss'
 import CreateEnd from "../createEnding/CreateEnd";
+import Icons from "../../hooks/Icons/Icons";
+import {useSelector} from "react-redux";
 
 const FormWork: FC<WorkExp> = (work) => {
     const {t, i18n} = useTranslation();
-    let month
-    let year
+    const theme = useSelector((state:any) => state.theme)
 
-    // useEffect(() => {
-    //     dateConvert()
-    // }, [work])
-    //
-    // console.log(work.work_period)
-    //
-    // function dateConvert() {
-    //     let date = work.work_period.split('-')
-    //     let date1 = date[0].split('.')
-    //     let date2 = date[1].split('.')
-    //     let oneNum = Number(date2[1]) - Number(date1[1]) * 12
-    //     let twoNum
-    //     if( oneNum > 0){
-    //         twoNum = (oneNum - Number(date1[0]) + Number(date1[0]) + 1) / 12
-    //         if(twoNum > 1){
-    //             twoNum = twoNum.toString().split(',')
-    //             year = Number(twoNum[1])
-    //             month = Number(twoNum[0])
-    //         } else {
-    //             year = twoNum
-    //         }
-    //     } else{
-    //         month = Number(date1[0]) - Number(date1[0]) + 1
-    //     }
-    // }
+    function workPeriodBlock() {
+        if (work.year === 0) {
+            return (
+                <div className="basic__period_exp">
+                    <CreateEnd number={Number(work.month)} wordOne={'месяц'} wordTwo={'месяцев'} wordThree={'месяца'}
+                               wordEn={'month'}/>
+                </div>
+            )
+        } else if (work.month === 0) {
+            return (
+                <div className="basic__period_exp">
+                    <CreateEnd number={Number(work.year)} wordOne={'год'} wordTwo={'лет'}
+                               wordThree={'года'} wordEn={'year'}/>
+                </div>
+            )
+        } else {
+            return (
+                <div className="basic__period_exp">
+                    <div className="basic__period_expYear">
+                        <CreateEnd number={Number(work.year)} wordOne={'год'} wordTwo={'лет'}
+                                   wordThree={'года'} wordEn={'year'}/>
+                    </div>
+                    <div className="basic__period_expMonth">
+                        <CreateEnd number={Number(work.month)} wordOne={'месяц'} wordTwo={'месяцев'}
+                                   wordThree={'месяца'} wordEn={'month'}/>
+                    </div>
+                </div>
+            )
+        }
+    }
 
     return (
         <div className="formWork">
@@ -52,21 +58,23 @@ const FormWork: FC<WorkExp> = (work) => {
                                 </div>
                             </div>
                             <div className="basic__period">
-                                {work.work_period}
-                                <div className="basic__period_exp">
-                                    {(year) ?
-                                        (year + <CreateEnd number={year} wordOne={'год'} wordTwo={'лет'} wordThree={'года'} wordEn={'years'}/>) : ''}
-                                    {(month) ?
-                                        (month + <CreateEnd number={month} wordOne={'месяц'} wordTwo={'месяца'} wordThree={'месяцев'} wordEn={'month'}/>) : ''}
-                                </div>
+                                {work.work_start + '-' + work.work_end}  ({workPeriodBlock()})
                             </div>
                         </div>
-                        <div className="formWork__block-list">
+                        <div className="formWork__block-list list">
                             <ul>
-                                <CreateList items={(i18n.language == 'ru') ? work.responsibilities.ru : work.responsibilities.en}
-                                            renderItem={(resp: string) =>
-                                                <li>{resp}</li>
-                                }/>
+                                <CreateList
+                                    items={(i18n.language == 'ru') ? work.responsibilities.ru : work.responsibilities.en}
+                                    renderItem={(resp: string) =>
+                                        <li>
+                                            <div className="list__icon">
+                                                {(theme === 'dark') ? <Icons name='circle-black' size='5'/> : <Icons name='circle' size='5'/>}
+                                            </div>
+                                            <div className="list__text">
+                                                {resp}
+                                            </div>
+                                        </li>
+                                    }/>
                             </ul>
                         </div>
 

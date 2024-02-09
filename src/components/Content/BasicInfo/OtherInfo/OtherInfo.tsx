@@ -4,6 +4,7 @@ import Icons from "../../../../hooks/Icons/Icons";
 import {skillsType} from "../../../../types/skillsType";
 import CreateList from "../../../CreateList/CreateList";
 import './OtherInfo.scss'
+import {useSelector} from "react-redux";
 
 const OtherInfo: FC<skillsType> = (briefInfo) => {
     const {t, i18n} = useTranslation();

@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {EducationBack, WorkExp} from "../../../../types/userType";
+import React, {FC, useEffect, useState} from 'react';
+import {EducationBack, WorksExp} from "../../../../types/userType";
 import {ProjectsType} from "../../../../types/projectsType";
 import {useTranslation} from "react-i18next";
 import CreateList from "../../../CreateList/CreateList";
@@ -7,6 +7,7 @@ import FormProject from "../../../FormList/FormProject";
 import FormEduc from "../../../FormList/FormEduc";
 import FormWork from "../../../FormList/FormWork";
 import './InfoBlock.scss'
+import {WorkExp} from "../../../../types/workExp";
 
 interface ViewForm {
     educations: EducationBack[],
@@ -61,7 +62,10 @@ const InfoBlock: FC<ViewForm> = ({educations,works,projects}) => {
                                 <div className="list__element">
                                     <FormWork position={work.position}
                                               company={work.company}
-                                              work_period={work.work_period}
+                                              work_start={work.work_start}
+                                              work_end={work.work_end}
+                                              year={work.year}
+                                              month={work.month}
                                               responsibilities={work.responsibilities}/>
                                 </div>
                             }/>

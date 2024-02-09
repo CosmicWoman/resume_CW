@@ -3,8 +3,14 @@ import HeaderBlock from "./HeaderBlock/HeaderBlock";
 import InfoBlock from "./InfoBlock/InfoBlock";
 import './DetailedInfo.scss'
 import {UserType} from "../../../types/userType";
+import {WorkExp} from "../../../types/workExp";
 
-const DetailedInfo: FC<UserType> = (User) => {
+interface DetailedInfoType {
+    User: UserType,
+    Works: WorkExp[]
+}
+
+const DetailedInfo: FC<DetailedInfoType> = ({User, Works}) => {
     return (
         <div className="detailedInfo">
             <div className="container detailedInfo__container">
@@ -12,7 +18,7 @@ const DetailedInfo: FC<UserType> = (User) => {
                     <HeaderBlock ru={User.personal_info.name.ru}
                                  en={User.personal_info.name.en}/>
                     <InfoBlock educations={User.education_background}
-                               works={User.work_experience}
+                               works={Works}
                                projects={User.projects}/>
                 </div>
             </div>

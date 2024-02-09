@@ -7,7 +7,6 @@ import './PersonalInfo.scss'
 const PersonalInfo: FC<PersonalInfoType> = (PersInfo) => {
     const {t, i18n} = useTranslation();
     let fullYears = examinationDate(PersInfo.personal_info.birthday)
-    console.log(fullYears)
 
     function examinationDate(datestr: string) {
         const date = new Date(datestr)

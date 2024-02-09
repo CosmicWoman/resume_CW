@@ -60,14 +60,38 @@
         "projects": [
             {
                 "name_project": {
-                    "ru": "",
-                    "en": ""
+                    "ru": "Реплика Иви",
+                    "en": "Replica Ivi"
                 },
-                "link_project": "",
-                "project_tools": [""],
+                "link_project": "https://cosmicwoman.github.io/ivi-replica/films/",
+                "project_tools": ["JavaScript", "React", "Typescript", "i18next", "Redux", "SCSS", "Webpack", "Storybook"],
                 "specification": {
-                    "ru": "",
-                    "en": ""
+                    "ru": "Реплика сайта Иви, реализованная в команде(2 бэка + 3 фронта) согласно задаче.",
+                    "en": "A replica of the Ivi website, implemented in a team (2 backs + 3 fronts) according to the task."
+                }
+            },
+            {
+                "name_project": {
+                    "ru": "Страница онлайн магазина",
+                    "en": "Online store page"
+                },
+                "link_project": "https://cosmicwoman.github.io/online-store-public/",
+                "project_tools": ["JavaScript", "React", "Typescript", "SCSS", "Webpack"],
+                "specification": {
+                    "ru": "Страница онлайн-магазина, реализованная по макетам Figma. Минимальный функционал реализован по задаче.",
+                    "en": "An online store page based on Figma layouts. The minimum functionality is implemented according to the task."
+                }
+            },
+            {
+                "name_project": {
+                    "ru": "Страница с комментариями",
+                    "en": "Comments page"
+                },
+                "link_project": "https://github.com/CosmicWoman/Block_comments",
+                "project_tools": ["JavaScript", "SCSS", "Webpack"],
+                "specification": {
+                    "ru": "На странице прописан функционал для добавления, удаления, оценки комментариев. + проверка соответствия комментария правилам и вывод ошибок.",
+                    "en": "The page contains functionality for adding, deleting, and rating comments. + checks whether the comment complies with the rules and displays errors."
                 }
             }
         ],
