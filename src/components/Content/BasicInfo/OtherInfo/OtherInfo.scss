@@ -10,7 +10,7 @@
         }
 
         &_title, &_titleSmall{
-            padding-bottom: 10px;
+            padding-bottom: 5px;
             font-weight: 700;
             font-size: 16px;
         }
@@ -29,6 +29,10 @@
                 display: flex;
                 padding-bottom: 3px;
             }
+        }
+
+        &_icon{
+            margin-top: 5px;
         }
     }
 }

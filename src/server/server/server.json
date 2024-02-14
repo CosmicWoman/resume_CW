@@ -78,7 +78,7 @@
                 "link_project": "https://cosmicwoman.github.io/online-store-public/",
                 "project_tools": ["JavaScript", "React", "Typescript", "SCSS", "Webpack"],
                 "specification": {
-                    "ru": "Страница онлайн-магазина, реализованная по макетам Figma. Минимальный функционал реализован по задаче.",
+                    "ru": "Страница онлайн-магазина, реализованная по макетам Figma(без кроссфразуерной и мобильной верстки). Минимальный функционал реализован по задаче.",
                     "en": "An online store page based on Figma layouts. The minimum functionality is implemented according to the task."
                 }
             },
@@ -92,6 +92,42 @@
                 "specification": {
                     "ru": "На странице прописан функционал для добавления, удаления, оценки комментариев. + проверка соответствия комментария правилам и вывод ошибок.",
                     "en": "The page contains functionality for adding, deleting, and rating comments. + checks whether the comment complies with the rules and displays errors."
+                }
+            },
+            {
+                "name_project": {
+                    "ru": "Поиск репозиториев",
+                    "en": "Search repositories"
+                },
+                "link_project": "https://cosmicwoman.github.io/search-for-repositories.github.io/",
+                "project_tools": ["JavaScript", "CSS"],
+                "specification": {
+                    "ru": "Мниималистичная форма для поиска репозиторев.",
+                    "en": "A minimalist form for searching repositories."
+                }
+            },
+            {
+                "name_project": {
+                    "ru": "Верстка сайта №2",
+                    "en": "Website layout №2"
+                },
+                "link_project": "https://cosmicwoman.github.io/second-draft-with-layout/",
+                "project_tools": ["SCSS", "HTML"],
+                "specification": {
+                    "ru": "Первый опыт верстки сайта по макету в Figma",
+                    "en": "First experience of website layout using Figma layout"
+                }
+            },
+            {
+                "name_project": {
+                    "ru": "Верстка сайта №1",
+                    "en": "Website layout №1"
+                },
+                "link_project": "https://cosmicwoman.github.io/first-draft-with-layout/",
+                "project_tools": ["SCSS", "HTML"],
+                "specification": {
+                    "ru": "Первый опыт верстки сайта по макету в Figma",
+                    "en": "First experience of website layout using Figma layout"
                 }
             }
         ],

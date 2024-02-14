@@ -1,4 +1,4 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
 import {useTranslation} from "react-i18next";
 import {WorkExp} from "../../types/workExp";
 import CreateList from "../CreateList/CreateList";
@@ -51,10 +51,10 @@ const FormWork: FC<WorkExp> = (work) => {
                         <div className="formWork__block-basic basic">
                             <div className="basic__title">
                                 <div className="basic__title_title">
-                                    {(i18n.language == 'ru') ? work.position.ru : work.position.en}
+                                    {(i18n.language === 'ru') ? work.position.ru : work.position.en}
                                 </div>
                                 <div className="basic__title_subtitle">
-                                    {(i18n.language == 'ru') ? work.company.ru : work.company.en}
+                                    {(i18n.language === 'ru') ? work.company.ru : work.company.en}
                                 </div>
                             </div>
                             <div className="basic__period">
@@ -64,7 +64,7 @@ const FormWork: FC<WorkExp> = (work) => {
                         <div className="formWork__block-list list">
                             <ul>
                                 <CreateList
-                                    items={(i18n.language == 'ru') ? work.responsibilities.ru : work.responsibilities.en}
+                                    items={(i18n.language === 'ru') ? work.responsibilities.ru : work.responsibilities.en}
                                     renderItem={(resp: string) =>
                                         <li>
                                             <div className="list__icon">

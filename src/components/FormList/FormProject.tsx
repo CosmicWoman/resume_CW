@@ -14,14 +14,14 @@ const FormProject: FC<ProjectsType> = (projects) => {
                     <div className="formProject__block">
                         <div className="formProject__block_title">
                             <a href={projects.link_project}>
-                                {(i18n.language == 'ru') ? projects.name_project.ru : projects.name_project.en}
+                                {(i18n.language === 'ru') ? projects.name_project.ru : projects.name_project.en}
                             </a>
                         </div>
                         <div className="formProject__block_list">
                             [{projects.project_tools.join(', ')}]
                         </div>
                         <div className="formProject__block_text">
-                            {(i18n.language == 'ru') ? projects.specification.ru : projects.specification.en}
+                            {(i18n.language === 'ru') ? projects.specification.ru : projects.specification.en}
                         </div>
                     </div>
 
