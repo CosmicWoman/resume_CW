@@ -26,3 +26,28 @@
         padding-top: 2px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .mobileInfo {
+        &__content {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 5px;
+
+            &_icon {
+                margin-right: 5px;
+            }
+        }
+    }
+}

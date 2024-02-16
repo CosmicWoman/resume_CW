@@ -1,5 +1,5 @@
 .infoBlock {
-    margin: 40px 0 0 25px;
+    margin: 20px 0 0 25px;
     &__contant {
     }
 
@@ -23,5 +23,42 @@
 .list{
     &__element{
         margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .infoBlock{
+        &__block{
+            margin-right: 30px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .infoBlockMobile{
+        display: flex;
+        &__block{
+            &_title, &_title-dark{
+                min-width: 100vw;
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &_title{
+                background-color: #D3A5E4;
+            }
+            &_title-dark{
+                background-color: rgba(128, 61, 255, 0.5);
+            }
+            &_list{
+                margin: 15px;
+            }
+        }
+    }
+    .infoBlock{
+        &__border{
+            display: none;
+        }
     }
 }

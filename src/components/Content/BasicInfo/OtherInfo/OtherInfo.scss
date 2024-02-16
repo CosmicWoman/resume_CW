@@ -45,3 +45,38 @@
     &__text{
     }
 }
+
+@media (max-width: 450px) {
+    .mobileOtherInfo{
+        &__block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .dark-title, .title{
+        width: 100vw;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title{
+        background-color: #D3A5E4;
+    }
+    .dark-title{
+        background-color: rgba(128, 61, 255, 0.4);
+    }
+    .dark-title:last-child, .title:last-child{
+        padding-left: 10px;
+    }
+
+    .list{
+        ul{
+            margin: 10px 0;
+            li{
+                line-height: 13px;
+            }
+        }
+    }
+}

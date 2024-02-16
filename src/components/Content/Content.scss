@@ -1,8 +1,23 @@
 .content{
-    &__container{
-
-    }
     &__content{
         display: flex;
+    }
+}
+
+@media (max-width: 450px) {
+    .content{
+        &__content{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .content-light{
+        min-height: 100vh;
+        background-color: #E6E6FA;
+    }
+    .content-dark{
+        min-height: 100vh;
+        background-color: rgba(116, 66, 200, 0.3);
     }
 }

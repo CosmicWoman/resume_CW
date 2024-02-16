@@ -1,12 +1,14 @@
 .basic-info {
     flex-grow: 0.1;
 
-    &__content,  &__content-dark   {
+    &__content, &__content-dark {
         min-width: 250px;
         height: 1100px;
         padding-top: 30px;
     }
+}
 
+.basic-info,.basicInfoMobile{
     &__content {
         background-color: #E6E6FA;
     }
@@ -14,7 +16,6 @@
     &__content-dark {
         background-color: rgba(116, 66, 200, 0.3);
     }
-
     &__photo {
         display: flex;
         justify-content: center;
@@ -24,6 +25,31 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width: 1270px) {
+    .basic-info {
+        &__content, &__content-dark {
+            min-height: 97vh;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .basicInfoMobile {
+        &__content, &__content-dark {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__photo {
+            img {
+                width: 150px;
+                height: 150px;
+            }
         }
     }
 }

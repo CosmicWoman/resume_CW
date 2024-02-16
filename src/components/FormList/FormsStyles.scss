@@ -53,7 +53,6 @@
     &__period {
         display: flex;
         padding-left: 3px;
-
         &_exp {
             display: flex;
         }
@@ -71,5 +70,61 @@
         display: flex;
         margin-top: 2px;
         font-size: 10px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .formProject {
+        &__content {
+            margin-top: 5px;
+        }
+
+        &__block {
+
+            &_title {
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                margin: 15px 0 8px;
+
+                a {
+                    border-bottom: 1px solid #BB19EB;
+                }
+            }
+            &_list{
+                line-height: 14px;
+            }
+            &_text{
+                font-size: 11px;
+            }
+        }
+    }
+
+    .basic {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            &_subtitle{
+                font-size: 10px;
+            }
+        }
+
+        &__period {
+            font-size: 10px;
+            padding-left: 0;
+        }
+    }
+
+    .list {
+        ul{
+            margin-top: 2px;
+        }
+        li {
+            display: flex;
+            margin-top: 2px;
+            font-size: 10px;
+        }
     }
 }

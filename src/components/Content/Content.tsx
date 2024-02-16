@@ -5,6 +5,7 @@ import DetailedInfo from "./DetailedInfo/DetailedInfo";
 import {defaultUser, UserType, WorksExp} from "../../types/userType";
 import api from "../../api";
 import {WorkExp, workExp} from "../../types/workExp";
+import {useSelector} from "react-redux";
 
 interface nameProps {
     ru: string
@@ -20,6 +21,8 @@ const Content = () => {
     const [user, setUser] = useState<UserType>(defaultUser)
     const [name, setName] = useState<nameProps>(nameUser)
     const [works, setWorks] = useState<WorkExp[]>([workExp])
+    const theme = useSelector((state: any) => state.theme)
+    const media = window.matchMedia('(max-width: 450px)')
 
     useEffect(() => {
         UserCreate()
@@ -56,8 +59,6 @@ const Content = () => {
         let startDate = start.split('.')
         let endDate = end.split('.')
 
-        console.log(Number(endDate[1]) - Number(startDate[1]))
-
         return (Number(endDate[1]) - Number(startDate[1]))
     }
 
@@ -65,13 +66,25 @@ const Content = () => {
         let year = createYear(start, end) * 12
         let startDate = start.split('.')
         let endDate = end.split('.')
-            return (year - Number(startDate[0]) + Number(endDate[0]) + 1 - year)
+        return (year - Number(startDate[0]) + Number(endDate[0]) + 1 - year)
+    }
+
+    function additionalClass() {
+        if(media.matches) {
+            if (theme === 'dark') {
+                return ' content-light'
+            } else{
+                return ' content-dark'
+            }
+        } else {
+            return ''
+        }
     }
 
     return (
         <div className="content">
             <div className="container content__container">
-                <div className="content__content">
+                <div className={"content__content" + additionalClass()}>
                     <BasicInfo photo={user.photo}
                                personal_info={user.personal_info}
                                hard_skills={user.hard_skills}
