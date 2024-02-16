@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume_CW/static/css/main.4e488d56.css",
-    "main.js": "/resume_CW/static/js/main.7ff63a64.js",
+    "main.css": "/resume_CW/static/css/main.c8c64829.css",
+    "main.js": "/resume_CW/static/js/main.a6309f71.js",
     "static/media/Comfortaa-SemiBold.eot": "/resume_CW/static/media/Comfortaa-SemiBold.d5565f39995b174448d5.eot",
     "static/media/Comfortaa-Medium.eot": "/resume_CW/static/media/Comfortaa-Medium.03cfa91b4c0dda3e5859.eot",
     "static/media/Comfortaa-Regular.eot": "/resume_CW/static/media/Comfortaa-Regular.074598226a9d5c8303a5.eot",
@@ -23,14 +23,14 @@
     "static/media/Comfortaa-Bold.woff2": "/resume_CW/static/media/Comfortaa-Bold.ddc747928a1b245f2072.woff2",
     "static/media/Comfortaa-Light.woff2": "/resume_CW/static/media/Comfortaa-Light.20b86cf10ae86ea5d073.woff2",
     "static/media/ava.jpg": "/resume_CW/static/media/ava.ef6407ebf009415f98c3.jpg",
-    "static/media/icons.svg": "/resume_CW/static/media/icons.63d4e9ade0d4d13882e746290fc30703.svg",
+    "static/media/icons.svg": "/resume_CW/static/media/icons.f4b1d3eae61689eb47a3fe80500d8c79.svg",
     "index.html": "/resume_CW/index.html",
     "static/media/getFetch.cjs": "/resume_CW/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.4e488d56.css.map": "/resume_CW/static/css/main.4e488d56.css.map",
-    "main.7ff63a64.js.map": "/resume_CW/static/js/main.7ff63a64.js.map"
+    "main.c8c64829.css.map": "/resume_CW/static/css/main.c8c64829.css.map",
+    "main.a6309f71.js.map": "/resume_CW/static/js/main.a6309f71.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e488d56.css",
-    "static/js/main.7ff63a64.js"
+    "static/css/main.c8c64829.css",
+    "static/js/main.a6309f71.js"
   ]
 }
